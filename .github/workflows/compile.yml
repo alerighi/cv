@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Compile CV English
+      run: latexmk cv.en.tex
+    - name: Compile CV Italian
+      run: latexmk cv.it.tex 
