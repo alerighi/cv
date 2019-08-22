@@ -20,7 +20,7 @@ jobs:
     - name: Deploy on GitHub pages
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
         BUILD_SCRIPT: mkdir build && cp cv.it.pdf cv.en.pdf build/ 
