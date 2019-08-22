@@ -18,9 +18,9 @@ jobs:
         root_file: cv.it.tex
         extra_packages: moderncv
     - name: Deploy on GitHub pages
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@ghtoken
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
         BUILD_SCRIPT: mkdir build && cp cv.it.pdf cv.en.pdf build/ 
