@@ -11,10 +11,12 @@ jobs:
       uses: xu-cheng/latex-action@master
       with:
         root_file: cv.en.tex
+        extra_packages: moderncv
     - name: Compile CV English
       uses: xu-cheng/latex-action@master
       with:
         root_file: cv.it.tex
+        extra_packages: moderncv
     - name: Deploy on GitHub pages
       uses: JamesIves/github-pages-deploy-action@master
       env:
