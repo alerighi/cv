@@ -7,9 +7,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install LaTeX
-      run: sudo apt-get update && sudo apt-get install -y texlive-full
     - name: Compile CV English
-      run: latexmk cv.en.tex
-    - name: Compile CV Italian
-      run: latexmk cv.it.tex 
+      uses: xu-cheng/latex-action@master
+      with:
+        root_file: cv.en.tex
+    - name: Compile CV English
+      uses: xu-cheng/latex-action@master
+      with:
+        root_file: cv.it.tex
+    - name: Deploy on GitHub pages
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: mkdir build && cp cv.it.pdf cv.en.pdf build/ 
