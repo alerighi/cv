@@ -12,7 +12,7 @@ jobs:
       with:
         root_file: cv.en.tex
         extra_packages: moderncv
-    - name: Compile CV English
+    - name: Compile CV Italian
       uses: xu-cheng/latex-action@master
       with:
         root_file: cv.it.tex
