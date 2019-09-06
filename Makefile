@@ -1,7 +1,7 @@
-all: cv.it.pdf cv.en.pdf
+all:
+	latexmk -pdf -outdir=build/ -auxdir=build/ *.tex
+	mkdir -p public/
+	cp build/*.pdf public/	
 
-%.pdf: %.tex
-	latexmk -outdir=build/ -auxdir=build/ $<
-	
 clean:
 	git clean -fdx
