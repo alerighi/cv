@@ -12,7 +12,7 @@ jobs:
       with: 
         entrypoint: /usr/bin/make
     - name: Deploy on GitHub pages
-      uses: JamesIves/github-pages-deploy-action
+      uses: JamesIves/github-pages-deploy-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
