@@ -1,15 +1,17 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.50in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 
-\moderncvstyle{classic} 
-\moderncvcolor{blue} 
+\moderncvstyle{classic}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.35,0.65,0.40}% green
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
 \firstname{Alessandro}
 \lastname{Righi}
 \title{Curriculum Vitae}
-\address{Via A.Volta 9}{San Pietro in Cariano (VR) 37029}{Italy}
+\address{Via Alessandro Volta 9}{San Pietro in Cariano (VR) 37029}{Italy}
 \phone[mobile]{+39~349~843~7935}
 \email{alerighi4@gmail.com}
 \homepage{alerighi.it}
@@ -19,34 +21,39 @@
 \begin{document}
 \makecvtitle
 
-\section{Instruction}
-\cventry{2010--2015}{Diploma of scientific lyceum}{ISIS L.Calabrese P.Levi}{San Pietro in Cariano (VR)}{\textit{80/100}}{}  
+Hi! I'm a programmer living in Verona. I have a strong passion in informatics and electronics. In 2018 I graduated in computer
+science at the University of Verona and now I'm completing my master's degree. I participated in competitive
+programming competitions and I'm a tutor for the Italian Olympics in Informatics. I also took part in the CyberChallenge.IT
+program and now I'm a member of the 2020 italian Team Italy of cyberdefenders.
+
+\section{Education}
+\cventry{2018--today}{Master degree in Computer Science and Engineering, with specialization in Computer Security}{University of Verona}{}{}{}
 \cventry{2015--2018}{Bachelor's degree in Computer Science}{University of Verona}{}{\textit{110/110 with honors}}{}
-\cventry{2018--today}{Master degree in Computer Science, specialization in Computer Security}{University of Verona}{}{}{}
+\cventry{2010--2015}{Diploma of scientific lyceum}{ISIS L.Calabrese P.Levi}{San Pietro in Cariano (VR)}{\textit{80/100}}{}
 
-\section{Job experience}
+\section{Experience}
+\cventry{2020--today}{Software engineer}{IOTINGA SRLS}{}{}{}
+\cventry{2021--today}{Tutor for the CyberChallenge.IT program}{University of Verona}{}{}{}
 \cventry{2018--today}{Tutor and software developer for the Italian Olympics in Informatics team}{}{}{}{}
-\cventry{2018--2019}{Tutor for the course Programming for Mathematics}{University of Verona}{}{}{}
+\cventry{2018--2020}{Tutor for the course Programming Challenges}{University ov Verona}{}{}{}
 \cventry{2019--2020}{Tutor for the courses Programming I and Programming II}{University of Verona}{}{}{}
+\cventry{2018--2019}{Tutor for the course Programming for Mathematics}{University of Verona}{}{}{}
 
-\section{Competitive programming}
-\cventry{2018}{Participation at the ICPC-ACM SWERC 2018-2019 competitive programming contest}{Télécom ParisTech}{Paris}{}{}
-\cventry{2019}{Participation at the Google HashCode competitive programming contest word finals}{Google European Headquarter}{Dublin}{}{}
-\cventry{2019}{Team leader for the Italian team at the CEOI 2019 contest}{}{Bratislava, Slovakia}{}{}
-\cventry{2020}{Participation at the ICPC-ACM SWERC 2019-2020 competitive programming contest}{Télécom ParisTech}{Paris}{}{}
+\section{Archivements}
+\cventry{2020}{Third place at the CyberChallenge.IT national challenge}{University of Verona}{}{}{}
+\cventry{2020}{First place at the local CyberChallenge.IT CTF}{University of Verona}{}{}{}
+\cventry{2020}{35st place at the ICPC-ACM SWERC 2019-2020}{Télécom ParisTech}{Paris}{}{}
+\cventry{2019}{21st place at the Google HashCode word finals}{Google European Headquarter}{Dublin}{}{}
+\cventry{2018}{22nd place at the ICPC-ACM SWERC 2018-2019}{Télécom ParisTech}{Paris}{}{}
 
+\section{Skills}
+\cvitem{Programming}{Good programming and software engineering skills with a multitude of languages, good at writing and understanding algorithms, participation in competitive programming contests.}
+\cvitem{Electronics}{Basic knowledge of electronics, microcontroller firmware development, experience with IoT devices, ability to understand basic circuits, design of simple PCBs, hobbyist electrician.}
+\cvitem{Operating systems}{Advanced knowledge GNU/Linux and other UNIX-like operating systems, both as developer and system administrator, knowledge of Windows, macOS, iOS and Android.}
+\cvitem{System administration}{Administration of servers, usage of cloud services from Amazon AWS, knowledge of RDBMS, configuration of networking equipment and administration of networks.}
+\cvitem{Computer security}{Good competences in computer security, cryptography, knowledge of the main secirity protocols, penetration testing, ethical hacking, participation in CTF competitions.}
+\vspace*{\fill}
 
-\section{Languages}
-\cvitemwithcomment{Italian}{Native language.}{}
-\cvitemwithcomment{English}{Level B1.}{}
-
-\section{Computer science knowledge}
-\cvitem{Programming languages}{C, C++, Rust, Python, Java, Kotlin, C\#, JavaScript, TypeScript, PHP, Bash, assembly x86, functional programming.}
-\cvitem{Operating systems}{Excellent knowledge of GNU/Linux (Debian/Ubuntu, ArchLinux, RHEL/CentOS), good knowledge of Windows, MacOS and Android.}
-\cvitem{System administration}{Administration of GNU/Linux systems, knowledge of tools like systemd, iptables, LVM, Docker/LXC containers, virtualization, NGINX, Apache, wireguard.}
-\cvitem{Computer security}{Knowledge of the main protocols (SSL, HTTPS, SSH, PGP/GPG), knowledge of the main cryptographic algorithms (RSA, Diffie-Hellman, AES).}
-\cvitem{Algorithms}{Excellent knowledge of the main algorithms and good ability to invent new ones, participation in competitive programming contests.}
-\cvitem{Other}{Good knowledge of relational databases (PostgreSQL, MySQL, SQLite), web development (HTML5, CSS, frameworks like Angular/React, Flask, REST, GraphQL), Android app development.}
-
-You can get the latest version of this document here: \url{https://alerighi.github.io/cv/cv.en.pdf}
+You can get the latest version of this document here: \url{https://alerighi.it/cv-alessandro-righi.pdf}. \\
+Take also a loot at my website \url{https://alerighi.it} and my GitHub page \url{https://github.com/alerighi}.
 \end{document}
