@@ -1,14 +1,17 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.40in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 
-\moderncvstyle{classic} 
-\moderncvcolor{blue} 
+\moderncvstyle{classic}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.35,0.65,0.40}% green
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
-\name{Alessandro}{Righi}
+\firstname{Alessandro}
+\lastname{Righi}
 \title{Curriculum vitae}
-\address{Via A.Volta 9}{San Pietro in Cariano (VR)}{37029}
+\address{San Pietro in Cariano}{37029, Verona}{}
 \phone[mobile]{+39~349~843~7935}
 \email{alessandro.righi@outlook.it}
 \homepage{alerighi.it}
@@ -16,34 +19,53 @@
 \social[github]{alerighi}
 
 \begin{document}
-\makecvtitle
+\makecvtitle{}
+
+Ho sempre avuto una forte passione per l'informatica e l'elettronica. Attualmente lavoro in IOTINGA, una giovane azienda
+specializzata in dispositivi IoT ed industria 4.0. Ho ottenuto una laurea magistrale in ingegneria e scienze informatiche con
+specializzazione in sicurezza informatica presso l'Università degli studi di Verona. Nel tempo libero sono istruttore per
+il progetto CyberChallenge.IT nella sede UniVR. In passato ho fatto il tutor per le Olimpiadi dell'Informatica.
 
 \section{Istruzione}
-\cventry{2010--2015}{Diploma di liceo scientifico}{ISIS L.Calabrese P.Levi}{San Pietro in Cariano (VR)}{\textit{80/100}}{}
+\cventry{2018--2022}{Laurea magistrale in Ingegneria e scienze informatiche, indirizzo Sicurezza}{Università degli studi di Verona}{}{\textit{109/110}}{}
 \cventry{2015--2018}{Laurea in Informatica}{Università degli studi di Verona}{}{\textit{110/110 con Lode}}{}
-\cventry{2018--oggi}{Laurea magistrale in Ingegneria e scienze informatiche, indirizzo Sicurezza}{Università degli studi di Verona}{}{}{}
+\cventry{2010--2015}{Diploma di liceo scientifico}{ISIS L.Calabrese P.Levi}{San Pietro in Cariano (VR)}{\textit{80/100}}{}
 
-\section{Esperienze lavorative}
-\cventry{2018--oggi}{Tutor e sviluppatore software presso il team Olimpiadi italiane di Informatica}{AICA}{}{}{}
-\cventry{2018--2019}{Tutor per il corso ``Laboratorio di programmazione, Matematica Applicata''}{Università degli studi di Verona}{}{}{}
-\cventry{2019--2020}{Tutor per il corso ``Laboratorio di programmazione II, Informatica''}{Università degli studi di Verona}{}{}{}
-\cventry{2019--2020}{Tutor per il corso ``Laboratorio di programmazione I, Bioinformatica''}{Università degli studi di Verona}{}{}{}
+\section{Esperienze}
+\cventry{2020--oggi}{Software engineer}{IOTINGA s.r.l.}{San Martino Buon Albergo (VR)}{}{}
+\cventry{2021--oggi}{Istruttore per il progetto CyberChallenge.IT}{Università degli studi di Verona}{}{}{}
+\cventry{2018--2022}{Tutor e sviluppatore software presso il team Olimpiadi italiane di Informatica}{}{}{}{}
+\cventry{2018--2020}{Tutor del corso ``Sfide di programmazione''}{Università degli studi di Verona}{}{}{}
+\cventry{2019--2020}{Tutor del corso ``Programmazione I'', Bioinformatica}{Università degli studi di Verona}{}{}{}
+\cventry{2019--2020}{Tutor del corso ``Programmazione II'', Informatica}{Università degli studi di Verona}{}{}{}
+\cventry{2018--2019}{Tutor del corso ``Programmazione'', Matematica Applciata}{Università degli studi di Verona}{}{}{}
 
-\section{Programmazione competitiva}
-\cventry{2018}{Partecipazione alla gara di competitive programming ICPC-ACM SWERC 2018/2019}{Télécom ParisTech}{Parigi}{}{}
-\cventry{2019}{Partecipazione alle finali mondiali della gara di competitive programming Google HashCode}{Google European headquarter}{Dublino}{}{}
-\cventry{2019}{Team leader del team italiano alle gare CEOI 2019}{}{Bratislava, Slovacchia}{}{}
-\cventry{2020}{Partecipazione alla gara di competitive programming ICPC-ACM SWERC 2019/2020}{Télécom ParisTech}{Parigi}{}{}
+\section{Riconoscimenti}
+\cventry{2022}{CES Best of Innovation con il radiatore Polygon}{IOTINGA s.r.l. ed IRSAP s.p.a.}{Las Vegas}{}{}
+\cventry{2020}{Terzo classificato alla finale nazionale di CyberChallenge.IT}{Università degli studi di Verona}{}{}{}
+\cventry{2020}{Primo posto alla finale locale di CyberChallenge.IT}{Università degli studi di Verona}{}{}{}
+\cventry{2020}{35-esimi classificati, ICPC-ACM SWERC 2019/2020}{Télécom ParisTech}{Parigi}{}{}
+\cventry{2019}{21-esimi classificati, finali mondiali Google HashCode}{Google headquarter}{Dublino}{}{}
+\cventry{2018}{22-esimi classificati, ICPC-ACM SWERC 2018/2019}{Télécom ParisTech}{Parigi}{}{}
 
 \section{Lingue}
+\cvitemwithcomment{Italiano}{Lingua madre}{}
 \cvitemwithcomment{Inglese}{Livello B1}{}
 
-\section{Competenze informatiche}
-\cvitem{Linguaggi di programmazione}{C, C++, Rust, Python, Java, Kotlin, C\#, JavaScript, TypeScript, PHP, Bash, assembly x86, programmazione funzionale}
-\cvitem{Sistemi operativi}{Ottima conoscenza di GNU/Linux (Debian/Ubuntu, ArchLinux, RHEL/CentOS), buona conoscenza di Windows, MacOS ed Android}
-\cvitem{Amministrazione di sistema}{Amministrazione di sistemi GNU/Linux, conoscenza di tools quali systemd, iptables, LVM, container Docker/LXC, virtualizzazione, NGINX, Apache, wireguard}
-\cvitem{Sicurezza informatica}{Conoscenza dei protocolli più diffusi (SSL, HTTPS, SSH, PGP/GPG), conoscenza del funzionamento degli algoritmi crittografici (RSA, Diffie-Hellman, AES)}
-\cvitem{Algoritmi}{Buona conoscenza dei principali algoritmi e capacità di svilupparne di nuovi, partecipazione a gare di programmazione competitiva}
-\cvitem{Altre competenze}{Buona conoscenza dei database relazionali (PostgreSQL, MySQL, SQLite), sviluppo web (HTML5, CSS, framework quali Angular/React, Flask, REST, GraphQL), sviluppo applicazioni Android}
+\section{Competenze tecniche}
+\cvitem{Embedded}{Sviluppo firmware per microcontrollori 32-bit connessi, MQTT, BLE, Modbus, Espressif, FreeRTOS}
+\cvitem{App}{Realizzazione di app iOS/Android con React Native}
+\cvitem{Backend}{Realizzazione di backend REST, Node.JS, Python, Django, PostgreSQL}
+\cvitem{Cloud}{Ottima conoscenza dei servizi di AWS, serverless, DynamoDB, EC2, ECS, Lambda, IoT Core, IAM, Cloudformation}
+\cvitem{Elettronica}{Progettazione di circuiti elettronici digitali, realizzazione PCB con KiCad, diagnosi e riparazione di guasti}
+\cvitem{Amministrazione di sistema}{Amministrazione di sistemi e server GNU/Linux, Docker, Proxmox VE, sistemi CI/CD, Ansible}
+\cvitem{Cybersecurity}{Penetration testing, analisi di malware, reverse engineering, CTF}
+\cvitem{Frontend}{Realizzazione applicazioni web React, CSS, TypeScript, PHP}
+
+\vspace*{\fill}
+
+Puoi ottenere una versione aggiornata di questo documento qui: \url{https://alerighi.it/cv-alessandro-righi.it.pdf}. \\
+Fai anche un salto sul mio sito \url{https://alerighi.it} ed il mio profilo GitHub \url{https://github.com/alerighi}.
 
 \end{document}
+
